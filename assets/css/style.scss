@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+}
+.cv{
+    margin: 60px auto 0px;
+    width: 800px;
+    border: 1px dashed red;
+    padding: 16px 32px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+}
+.cv__info{
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        padding-bottom: 6px;
+        font-weight: 700;
+        font-size: 2.9rem;
+        text-shadow: 8px 10px 2px rgba(0,0,0,0.1);
+        border-bottom: 2px solid blue;
+        text-align: center;
+    }
+    &-personal{
+        display: flex;
+        img{
+            width: 120px;
+            height: 120px;
+            display: block;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+            border-radius: 3px;
+        }
+        &-detail{
+            font-size: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 12px;
+            p{
+                font-weight: 700;
+                i{
+                    padding-right: 8px;
+                    color: orange;
+                }
+                span{
+                    color: blue;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.cv__body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    font-size: 1.6rem;
+    h3{
+        text-transform: uppercase;
+        padding: 6px 8px;
+        background-color: #ccc;
+        color: #000;
+        font-size: 2rem;
+        border-bottom: 2px solid rgb(158, 156, 156);
+        // border-top-left-radius: 5px;
+        // border-top-right-radius: 5px;
+        border-radius: 5px;
+        i{
+            margin-right: 6px;
+            color: blue;
+        }
+    }
+    &-edu{
+        flex: 1;
+        margin-right: 36px;
+    }
+   
+    &-edu-name{
+        padding: 10px 0px;
+        font-weight: 700;
+        span{
+            font-weight: 500;
+            float: right;
+        }
+    }
+    &-edu-skill{
+        font-style: italic;
+        padding-bottom: 18px;
+    }
+    &-certi{
+        flex: 1;
+        p{
+            padding: 12px 0px;
+            font-weight: 700;
+            span{
+                font-weight: 500;
+                float: right;
+            }
+            &:last-child{
+                padding: 1px 0px    ;
+            }
+        }
+    }
+}
